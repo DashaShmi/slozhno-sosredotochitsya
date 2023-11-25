@@ -15,7 +15,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   /* padding: 10px;
   height: 668px; */
   padding: 20px;
@@ -47,15 +47,15 @@
   position: relative;
 }
 
-.header__theme-menu {
+/* .header__theme-menu {
   align-self: flex-end;
   margin-top: 40px;
-}
+} */
 
 .header__theme-menu-list {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 13px;
   /* align-items: flex-end; */
 }
@@ -71,6 +71,14 @@
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  text-decoration-line: underline;
+}
+
 .header_footer__title {
   /* для мобилки */
   /* font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); */
@@ -82,6 +90,7 @@
 .header .header_footer__title {
   align-self: flex-start;
   margin-bottom: 114px;
+  margin-top: 275px;
 }
 
 .header__descr {
