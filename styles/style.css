@@ -153,7 +153,7 @@ p {
 }
 
 /* только мобилы */
-@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .page {
     margin-right: 10px;
     margin-left: 10px;
@@ -221,7 +221,7 @@ p {
 }
 
 /* только таблет */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .header__theme-menu {
     margin-top: 172px;
   }
@@ -367,7 +367,7 @@ p {
 }
 
 /* только десктоп */
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .header .header_footer__title {
     margin-top: 275px;
     margin-bottom: 114px;
