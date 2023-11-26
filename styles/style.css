@@ -73,6 +73,10 @@
   text-decoration-line: underline;
 } */
 
+.header .header_footer__title {
+  line-height: 82.5%;
+}
+
 .header_footer__title {
   text-shadow: 4px 4px 0 var(--main-color);
   color: var(--accent-color);
@@ -80,8 +84,6 @@
 
 .header__descr {
   align-self: flex-end;
-  /* для мобилы */
-  /* margin-bottom: 66px; */
   margin-bottom: 134px;
   max-width: 490px;
 }
@@ -163,11 +165,16 @@ p {
 
   .header__theme-menu-list {
     flex-direction: column;
-    margin-top: 66px;
+    margin-top: 75px;
   }
 
   .header_footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    line-height: 82.5%;
+  }
+
+  header .header_footer__title {
+    margin-top: 65px;
   }
 
   .header__descr {
@@ -256,7 +263,6 @@ p {
     margin-bottom: 162px;
     /* по макету заголовок сдвинут */
     margin-left: -20px;
-    line-height: 82.5%;
   }
   .header__descr {
     align-self: flex-end;
