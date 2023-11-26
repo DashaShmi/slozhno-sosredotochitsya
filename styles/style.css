@@ -44,17 +44,9 @@
   position: relative;
 }
 
-/* .header__theme-menu {
-  align-self: flex-end;
-  margin-top: 40px;
-} */
-
 .header__theme-menu-list {
   display: flex;
-  justify-content: center;
-  /* flex-direction: column; */
   gap: 10px;
-  /* align-items: flex-end; */
 }
 
 .header__theme-menu-button {
@@ -161,6 +153,19 @@ button:hover {
 
   section + section {
     margin-top: 50px;
+  }
+}
+
+/* только таблет */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .header__theme-menu {
+    margin-top: 172px;
+  }
+
+  .header__theme-menu-list {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 
@@ -308,5 +313,8 @@ button:hover {
 
   .narrow .section__content {
     grid-column: span 4;
+  }
+  .header__theme-menu-list {
+    justify-content: center;
   }
 }
