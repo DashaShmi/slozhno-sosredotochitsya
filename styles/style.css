@@ -15,7 +15,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .rec {
@@ -104,6 +104,10 @@
   border-left: 1px solid var(--main-color);
 }
 
+p {
+  font-size: 18px;
+}
+
 .section__title {
   color: var(--main-color);
   font-size: 18px;
@@ -140,7 +144,7 @@
 }
 
 .footer {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,6 +254,9 @@
     align-self: flex-start;
     margin-top: 173px;
     margin-bottom: 162px;
+    /* по макету заголовок сдвинут */
+    margin-left: -20px;
+    line-height: 82.5%;
   }
   .header__descr {
     align-self: flex-end;
@@ -341,7 +348,7 @@
 
   .narrow .section__title {
     /* здесь настройки куда пихнуть тайтл в гриде */
-    grid-column: span 12;
+    grid-column: span 4;
   }
   header + section,
   section + footer {
@@ -360,12 +367,13 @@
     margin-bottom: 114px;
   }
   .header__descr {
-    margin-bottom: 134px;
+    margin-bottom: 114px;
     max-width: 490px;
   }
 
   .narrow .section__content {
     grid-column: span 4;
+    grid-row-start: 2;
   }
   .header__theme-menu-list {
     justify-content: center;
