@@ -298,6 +298,7 @@ p {
 
   .images .title-decor {
     grid-column: span 12;
+    margin-bottom: 0;
   }
 
   img {
