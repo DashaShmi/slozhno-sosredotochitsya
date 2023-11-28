@@ -89,6 +89,7 @@ footer .main-title {
 
 .header__descr {
   align-self: center;
+  font-weight: 700;
 }
 
 .decorated-zone::before {
@@ -208,8 +209,8 @@ h4.section__content_title {
     bottom: 10px;
   }
 
-  header + section,
-  section + footer {
+  header + main,
+  main + footer {
     margin-top: 40px;
   }
 
@@ -233,11 +234,6 @@ h4.section__content_title {
     padding: 20px;
   }
 
-  .rec {
-    top: 22px;
-    right: 28px;
-  }
-
   .main-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -259,7 +255,6 @@ h4.section__content_title {
   .header__descr {
     width: 50%;
     justify-self: flex-end;
-    font-weight: 700;
   }
 
   .right__alignment {
@@ -348,8 +343,9 @@ h4.section__content_title {
     /* здесь настройки куда пихнуть тайтл в гриде */
     grid-column: span 4;
   }
-  header + section,
-  section + footer {
+
+  header + main,
+  main + footer {
     margin-top: 60px;
   }
 
