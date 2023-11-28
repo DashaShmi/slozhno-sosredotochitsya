@@ -124,14 +124,27 @@ p {
 .title-decor {
   background-color: var(--main-color);
   color: var(--text-color-accent);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
 }
 
-.title-thin {
+.section__content_title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 10px;
+}
+
+h4.section__content_title {
   font-weight: 400;
+}
+
+.images .section__content_title {
+  /* убираю, потому как плюсуется с gap */
+  margin-bottom: 0;
+}
+
+.section__content_title + .section__content_title {
+  /* марджины сплющиваются а не прибавляются к друг другу */
+  margin-top: 20px;
 }
 
 .link__decor {
@@ -168,15 +181,6 @@ p {
 
   .main-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 82.5%;
-  }
-
-  header .main-title {
-    /*  */
-  }
-
-  .header__descr {
-    /*  */
   }
 
   .section__title {
@@ -255,6 +259,7 @@ p {
   .header__descr {
     width: 50%;
     justify-self: flex-end;
+    font-weight: 700;
   }
 
   .right__alignment {
@@ -355,10 +360,6 @@ p {
 
 /* только десктоп */
 @media only screen and (min-width: 1024px) {
-  .header .main-title {
-    /* , */
-  }
-
   .header__theme-menu {
     align-self: flex-start;
     justify-self: center;
