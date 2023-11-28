@@ -65,11 +65,11 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--opacity-border);
+  border: 1px solid var(--main-color);
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--main-color);
+  border-color: var(--opacity-border);
 }
 
 .header__theme-menu-button:focus {
