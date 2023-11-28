@@ -14,12 +14,9 @@
   --text-color: #353430;
   --accent-color: #ffc2e6;
   --main-color: #ff8dcb;
+  --nav-color: #353430;
   --text-color-accent: #353430;
   --opacity-border: rgba(50, 49, 45, 0.4);
-}
-
-.page.theme_light .header__theme-menu-button {
-  color: var(--text-color);
 }
 
 .page.theme_light .decorated-zone::before {
