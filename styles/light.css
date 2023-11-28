@@ -20,8 +20,12 @@
   --triangle-color: #353430;
 }
 
+.page.theme_light .rec {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
-  :root {
+  .page {
     --bg-image: url(../images/cover-image-light.png);
     --bg-color: #fff1f7;
     --text-color: #353430;
@@ -32,8 +36,7 @@
     --opacity-border: rgba(50, 49, 45, 0.4);
     --triangle-color: #353430;
   }
-}
-
-.page.theme_light .rec {
-  display: none;
+  .rec {
+    display: none;
+  }
 }

@@ -82,6 +82,8 @@
   text-shadow: 4px 4px 0 var(--main-color);
   color: var(--accent-color);
   line-height: 82.5%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 footer .main-title {
