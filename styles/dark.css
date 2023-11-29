@@ -20,3 +20,6 @@
   --opacity-border: rgba(255, 0, 112, 0.4);
   --triangle-color: #ff0070;
 }
+.page.theme_dark .rec {
+  display: block;
+}
